@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
+import 'package:verstka/demon_icons.dart';
 
 class HomeScreen extends StatelessWidget {
   @override
@@ -11,14 +13,16 @@ class HomeScreen extends StatelessWidget {
           leading: IconButton(onPressed: () => {}, icon: const Icon(Icons.info_outline)),
         ),
         bottomNavigationBar: BottomNavigationBar(
+          type: BottomNavigationBarType.fixed,
           currentIndex: 0,
           backgroundColor: const Color.fromRGBO(125, 0, 0, 1),
           selectedItemColor: Colors.yellow[300],
           unselectedItemColor: Colors.white,
           items: const [
-            BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Тренды'),
+            BottomNavigationBarItem(icon: Icon(Icons.account_balance), label: 'Тренды'),
             BottomNavigationBarItem(icon: Icon(Icons.search), label: 'Поиск'),
-            BottomNavigationBarItem(icon: Icon(Icons.favorite_border), label: 'Избранное')
+            BottomNavigationBarItem(icon: Icon(Icons.favorite_border), label: 'Избранное'),
+            BottomNavigationBarItem(icon: Icon(Demon.vector), label: 'Профиль'),
           ],
         ),
         body: Container(

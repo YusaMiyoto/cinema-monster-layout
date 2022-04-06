@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'ProfileScreen.dart';
 import 'searchScreen.dart';
 import 'aboutDevelopersScreen.dart';
 import 'detailedViewScreen.dart';
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
                   onPrimary: Colors.white,
                   textStyle: TextStyle(fontSize: 16))),*/
       ),
-      home: DetailedViewScreen(),
+      home: HomeScreen(),
     );
   }
 }
